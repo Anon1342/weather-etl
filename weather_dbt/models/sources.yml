@@ -1,0 +1,7 @@
+version: 2
+
+sources:
+    - name: weather_data
+      schema: weather_data
+      tables:
+        - name: daily_weather

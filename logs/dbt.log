@@ -1,0 +1,91 @@
+[0m14:07:03.356372 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000002022C9B72C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202321F36E0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202321F3290>]}
+
+
+============================== 14:07:03.356372 | af543cf6-3347-4bbf-8a18-5fc159753218 ==============================
+[0m14:07:03.356372 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:07:03.356372 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'profiles_dir': 'C:\\Users\\aadkarki\\.dbt', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'partial_parse': 'True', 'invocation_command': 'dbt init weather_dbt', 'use_colors': 'True', 'indirect_selection': 'eager', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:07:03.478791 [info ] [MainThread]: Creating dbt configuration folder at C:\Users\aadkarki\.dbt
+[0m14:07:03.478791 [debug] [MainThread]: Starter project path: C:\Aadarsha\New folder\weather_etl\env_1\Lib\site-packages\dbt\include\starter_project
+[0m14:07:03.560358 [info ] [MainThread]: 
+Your new dbt project "weather_dbt" was created!
+
+For more information on how to configure the profiles.yml file,
+please consult the dbt documentation here:
+
+  https://docs.getdbt.com/docs/configure-your-profile
+
+One more thing:
+
+Need help? Don't hesitate to reach out to us via GitHub issues or on Slack:
+
+  https://community.getdbt.com/
+
+Happy modeling!
+
+[0m14:07:03.560358 [info ] [MainThread]: Setting up your profile.
+[0m14:12:24.143627 [info ] [MainThread]: Profile weather_dbt written to C:\Users\aadkarki\.dbt\profiles.yml using target's profile_template.yml and your supplied values. Run 'dbt debug' to validate the connection.
+[0m14:12:24.150520 [debug] [MainThread]: Command `dbt init` succeeded at 14:12:24.150520 after 320.97 seconds
+[0m14:12:24.150520 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020242EAEE70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x00000202441375C0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020231A2F830>]}
+[0m14:12:24.153156 [debug] [MainThread]: Flushing usage events
+[0m14:12:26.158855 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m14:15:35.788850 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D93811C70>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D9323B920>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D93093770>]}
+
+
+============================== 14:15:35.798308 | acf8f5ce-91ec-4b1c-a4fa-67854c95a29c ==============================
+[0m14:15:35.798308 [info ] [MainThread]: Running with dbt=1.11.11
+[0m14:15:35.800596 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'target_path': 'None', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'printer_width': '80', 'write_json': 'True', 'introspect': 'True', 'log_cache_events': 'False', 'empty': 'None', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\aadkarki\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt debug', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'logs'}
+[0m14:15:35.853848 [info ] [MainThread]: dbt version: 1.11.11
+[0m14:15:35.853848 [info ] [MainThread]: python version: 3.12.10
+[0m14:15:35.854897 [info ] [MainThread]: python path: C:\Aadarsha\New folder\weather_etl\env_1\Scripts\python.exe
+[0m14:15:35.854897 [info ] [MainThread]: os info: Windows-11-10.0.26200-SP0
+[0m14:15:37.642673 [info ] [MainThread]: Using profiles dir at C:\Users\aadkarki\.dbt
+[0m14:15:37.643670 [info ] [MainThread]: Using profiles.yml file at C:\Users\aadkarki\.dbt\profiles.yml
+[0m14:15:37.644664 [info ] [MainThread]: Using dbt_project.yml file at C:\Aadarsha\New folder\weather_etl\dbt_project.yml
+[0m14:15:37.645190 [info ] [MainThread]: adapter type: bigquery
+[0m14:15:37.646478 [info ] [MainThread]: adapter version: 1.11.2
+[0m14:15:37.646921 [info ] [MainThread]: Configuration:
+[0m14:15:37.646921 [info ] [MainThread]:   profiles.yml file [[32mOK found and valid[0m]
+[0m14:15:37.648107 [info ] [MainThread]:   dbt_project.yml file [[31mERROR not found[0m]
+[0m14:15:37.649136 [info ] [MainThread]: Required dependencies:
+[0m14:15:37.649136 [debug] [MainThread]: Executing "git --help"
+[0m14:15:37.768088 [debug] [MainThread]: STDOUT: "b"usage: git [-v | --version] [-h | --help] [-C <path>] [-c <name>=<value>]\n           [--exec-path[=<path>]] [--html-path] [--man-path] [--info-path]\n           [-p | --paginate | -P | --no-pager] [--no-replace-objects] [--no-lazy-fetch]\n           [--no-optional-locks] [--no-advice] [--bare] [--git-dir=<path>]\n           [--work-tree=<path>] [--namespace=<name>] [--config-env=<name>=<envvar>]\n           <command> [<args>]\n\nThese are common Git commands used in various situations:\n\nstart a working area (see also: git help tutorial)\n   clone     Clone a repository into a new directory\n   init      Create an empty Git repository or reinitialize an existing one\n\nwork on the current change (see also: git help everyday)\n   add       Add file contents to the index\n   mv        Move or rename a file, a directory, or a symlink\n   restore   Restore working tree files\n   rm        Remove files from the working tree and from the index\n\nexamine the history and state (see also: git help revisions)\n   bisect    Use binary search to find the commit that introduced a bug\n   diff      Show changes between commits, commit and working tree, etc\n   grep      Print lines matching a pattern\n   log       Show commit logs\n   show      Show various types of objects\n   status    Show the working tree status\n\ngrow, mark and tweak your common history\n   branch    List, create, or delete branches\n   commit    Record changes to the repository\n   merge     Join two or more development histories together\n   rebase    Reapply commits on top of another base tip\n   reset     Reset current HEAD to the specified state\n   switch    Switch branches\n   tag       Create, list, delete or verify a tag object signed with GPG\n\ncollaborate (see also: git help workflows)\n   fetch     Download objects and refs from another repository\n   pull      Fetch from and integrate with another repository or a local branch\n   push      Update remote refs along with associated objects\n\n'git help -a' and 'git help -g' list available subcommands and some\nconcept guides. See 'git help <command>' or 'git help <concept>'\nto read about a specific subcommand or concept.\nSee 'git help git' for an overview of the system.\n""
+[0m14:15:37.769089 [debug] [MainThread]: STDERR: "b''"
+[0m14:15:37.769089 [info ] [MainThread]:  - git [[32mOK found[0m]
+
+[0m14:15:37.770089 [info ] [MainThread]: Connection:
+[0m14:15:37.771089 [info ] [MainThread]:   method: service-account
+[0m14:15:37.771089 [info ] [MainThread]:   database: magnetic-port-429910-q4
+[0m14:15:37.772090 [info ] [MainThread]:   execution_project: magnetic-port-429910-q4
+[0m14:15:37.772090 [info ] [MainThread]:   schema: weather_data
+[0m14:15:37.773087 [info ] [MainThread]:   location: asia-south1
+[0m14:15:37.773087 [info ] [MainThread]:   priority: interactive
+[0m14:15:37.774099 [info ] [MainThread]:   maximum_bytes_billed: None
+[0m14:15:37.775086 [info ] [MainThread]:   impersonate_service_account: None
+[0m14:15:37.775086 [info ] [MainThread]:   job_retry_deadline_seconds: None
+[0m14:15:37.776091 [info ] [MainThread]:   job_retries: 1
+[0m14:15:37.777090 [info ] [MainThread]:   job_creation_timeout_seconds: None
+[0m14:15:37.777090 [info ] [MainThread]:   job_execution_timeout_seconds: 300
+[0m14:15:37.778336 [info ] [MainThread]:   timeout_seconds: 300
+[0m14:15:37.779569 [info ] [MainThread]:   client_id: None
+[0m14:15:37.779569 [info ] [MainThread]:   token_uri: None
+[0m14:15:37.780605 [info ] [MainThread]:   compute_region: None
+[0m14:15:37.781669 [info ] [MainThread]:   dataproc_cluster_name: None
+[0m14:15:37.782688 [info ] [MainThread]:   gcs_bucket: None
+[0m14:15:37.782688 [info ] [MainThread]:   dataproc_batch: None
+[0m14:15:37.783713 [info ] [MainThread]: Registered adapter: bigquery=1.11.2
+[0m14:15:38.648730 [debug] [MainThread]: Acquiring new bigquery connection 'debug'
+[0m14:15:38.649731 [debug] [MainThread]: On debug: select 1 as id
+[0m14:15:38.649731 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m14:15:49.251756 [debug] [MainThread]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=magnetic-port-429910-q4&j=bq:asia-south1:7a879e05-d978-412c-af21-dad983f02ffd&page=queryresults
+[0m14:15:49.513348 [debug] [MainThread]: SQL status: OK in 0.265 seconds
+[0m14:15:50.445882 [info ] [MainThread]:   Connection test: [[32mOK connection ok[0m]
+
+[0m14:15:50.445882 [info ] [MainThread]: [31m1 check failed:[0m
+[0m14:15:50.445882 [info ] [MainThread]: Project loading failed for the following reason:
+ project path <C:\Aadarsha\New folder\weather_etl\dbt_project.yml> not found
+
+[0m14:15:50.445882 [debug] [MainThread]: Command `dbt debug` failed at 14:15:50.445882 after 14.95 seconds
+[0m14:15:50.445882 [debug] [MainThread]: Connection 'debug' was properly closed.
+[0m14:15:50.445882 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D937C3C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D93926FF0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000020D93690740>]}
+[0m14:15:50.459773 [debug] [MainThread]: Flushing usage events
+[0m14:15:52.180344 [debug] [MainThread]: An error was encountered while trying to flush usage events

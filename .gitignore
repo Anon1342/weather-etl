@@ -1,0 +1,7 @@
+.env
+credentials.json
+weather.db
+__pycache__/
+env_1/
+*.pyc
+.prefect/

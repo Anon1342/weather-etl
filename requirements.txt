@@ -3,3 +3,6 @@ pandas
 google-cloud-bigquery
 python-dotenv
 prefect
+pyarrow
+pandas-gbq
+dbt-bigquery

@@ -33,6 +33,7 @@ Open-Meteo API → extract.py → transform.py → load_bq.py → BigQuery → d
 8. `cd weather_dbt`
 9. `dbt run`
 10.`prefect deploy pipeline_prefect.py:prefect_pipeline` (for scheduling)
+11. `prefect server start` for seeing the Prefect Dashboard
 
 ## Dashboard
 Built using Looker Studio connected to the dbt mart layer in BigQuery.

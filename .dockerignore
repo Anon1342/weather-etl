@@ -6,3 +6,5 @@ __pycache__/
 .prefect/
 env_1/
 profiles.yml
+weather_dbt/target/
+weather_dbt/logs/

@@ -1,1 +1,0 @@
-{"_invocation_id": "81c4262d-3eb9-4cb9-88f3-f413b76cd7b5", "linked": {"0": {"name": "source.weather_dbt.weather_data.daily_weather", "type": "source", "succ": [2]}, "1": {"name": "model.weather_dbt.mart_daily_weather", "type": "model"}, "2": {"name": "model.weather_dbt.stg_daily_weather", "type": "model", "succ": [1]}}}

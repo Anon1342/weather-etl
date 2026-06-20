@@ -30,8 +30,6 @@ Open-Meteo API → extract.py → transform.py → load_bq.py → BigQuery → d
 5.  Create .env file and add GOOGLE_APPLICATION_CREDENTIALS=credentials.json
 6.  Place your credentials.json file in the project folder
 7. `python pipeline_prefect.py`
-8. `cd weather_dbt`
-9. `dbt run`
 10.`prefect deploy pipeline_prefect.py:prefect_pipeline` (for scheduling)
 11. `prefect server start` for seeing the Prefect Dashboard
 

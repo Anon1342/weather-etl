@@ -910,3 +910,105 @@ from `magnetic-port-429910-q4`.`weather_data`.`stg_daily_weather`;
 [0m15:42:54.239868 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B4FABA6F0>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B6633F590>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x0000021B53301A30>]}
 [0m15:42:54.239868 [debug] [MainThread]: Flushing usage events
 [0m15:42:55.997825 [debug] [MainThread]: An error was encountered while trying to flush usage events
+[0m17:01:18.015654 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'start', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9E304C20>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9EBCB470>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9E5C03B0>]}
+
+
+============================== 17:01:18.018543 | 81c4262d-3eb9-4cb9-88f3-f413b76cd7b5 ==============================
+[0m17:01:18.018543 [info ] [MainThread]: Running with dbt=1.11.11
+[0m17:01:18.018543 [debug] [MainThread]: running dbt with arguments {'static_parser': 'True', 'no_print': 'None', 'version_check': 'True', 'warn_error_options': 'WarnErrorOptionsV2(error=[], warn=[], silence=[])', 'target_path': 'None', 'printer_width': '80', 'write_json': 'True', 'empty': 'False', 'log_cache_events': 'False', 'introspect': 'True', 'cache_selected_only': 'False', 'log_format': 'default', 'debug': 'False', 'fail_fast': 'False', 'partial_parse': 'True', 'send_anonymous_usage_stats': 'True', 'quiet': 'False', 'warn_error': 'None', 'profiles_dir': 'C:\\Users\\aadkarki\\.dbt', 'indirect_selection': 'eager', 'invocation_command': 'dbt run', 'use_colors': 'True', 'use_experimental_parser': 'False', 'log_path': 'C:\\Aadarsha\\New folder\\weather_etl\\weather_dbt\\logs'}
+[0m17:01:20.755727 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'project_id', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9F320290>]}
+[0m17:01:20.840708 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'adapter_info', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9EC3D790>]}
+[0m17:01:20.840708 [info ] [MainThread]: Registered adapter: bigquery=1.11.2
+[0m17:01:21.780992 [debug] [MainThread]: checksum: 30a8cc8fdcbf66701b0944d4ccce3fa46dd04b61e5df68b9f16d57b2e0e3f0be, vars: {}, profile: , target: , version: 1.11.11
+[0m17:01:22.931109 [debug] [MainThread]: Partial parsing enabled: 0 files deleted, 0 files added, 0 files changed.
+[0m17:01:22.931109 [debug] [MainThread]: Nothing changed, skipping partial parsing.
+[0m17:01:22.931109 [debug] [MainThread]: Partial parsing enabled, no changes found, skipping parsing
+[0m17:01:22.943016 [warn ] [MainThread]: [[33mWARNING[0m]: Configuration paths exist in your dbt_project.yml file which do not apply to any resources.
+There are 1 unused configuration paths:
+- models.weather_dbt.example
+[0m17:01:22.976908 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'load_project', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9F28C920>]}
+[0m17:01:23.069182 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Aadarsha\New folder\weather_etl\weather_dbt\target\manifest.json
+[0m17:01:23.086151 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Aadarsha\New folder\weather_etl\weather_dbt\target\semantic_manifest.json
+[0m17:01:23.134838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'resource_counts', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AAB1A38EC0>]}
+[0m17:01:23.134838 [info ] [MainThread]: Found 2 models, 1 source, 553 macros
+[0m17:01:23.134838 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AAB1A1F110>]}
+[0m17:01:23.134838 [info ] [MainThread]: 
+[0m17:01:23.134838 [info ] [MainThread]: Concurrency: 1 threads (target='dev')
+[0m17:01:23.134838 [info ] [MainThread]: 
+[0m17:01:23.134838 [debug] [MainThread]: Acquiring new bigquery connection 'master'
+[0m17:01:23.152006 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_magnetic-port-429910-q4'
+[0m17:01:23.152006 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:01:25.199573 [debug] [ThreadPool]: Acquiring new bigquery connection 'list_magnetic-port-429910-q4_weather_data'
+[0m17:01:25.201711 [debug] [ThreadPool]: Opening a new connection, currently in state init
+[0m17:01:26.849527 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'runnable_timing', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AAB159B380>]}
+[0m17:01:26.849527 [debug] [MainThread]: Opening a new connection, currently in state init
+[0m17:01:26.912628 [debug] [Thread-3 (]: Began running node model.weather_dbt.stg_daily_weather
+[0m17:01:26.912628 [info ] [Thread-3 (]: 1 of 2 START sql view model weather_data.stg_daily_weather ..................... [RUN]
+[0m17:01:26.912628 [debug] [Thread-3 (]: Acquiring new bigquery connection 'model.weather_dbt.stg_daily_weather'
+[0m17:01:26.912628 [debug] [Thread-3 (]: Began compiling node model.weather_dbt.stg_daily_weather
+[0m17:01:26.937199 [debug] [Thread-3 (]: Writing injected SQL for node "model.weather_dbt.stg_daily_weather"
+[0m17:01:26.940598 [debug] [Thread-3 (]: Began executing node model.weather_dbt.stg_daily_weather
+[0m17:01:26.978671 [debug] [Thread-3 (]: Writing runtime sql for node "model.weather_dbt.stg_daily_weather"
+[0m17:01:26.980673 [debug] [Thread-3 (]: On model.weather_dbt.stg_daily_weather: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "weather_dbt", "target_name": "dev", "node_id": "model.weather_dbt.stg_daily_weather"} */
+
+
+  create or replace view `magnetic-port-429910-q4`.`weather_data`.`stg_daily_weather`
+  OPTIONS()
+  as with cte as(
+select date,temp_min,temp_max,round(temp_avg,2) as average_temp, 
+row_number() over(partition by date order by date) as row_no
+from `magnetic-port-429910-q4`.`weather_data`.`daily_weather`
+)
+
+select c.* except (row_no)
+from cte c
+where row_no = 1;
+
+
+[0m17:01:26.981639 [debug] [Thread-3 (]: Opening a new connection, currently in state init
+[0m17:01:29.109904 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=magnetic-port-429910-q4&j=bq:asia-south1:332ffcf9-ca19-4f20-8b61-b7cfc85fc5af&page=queryresults
+[0m17:01:29.580747 [debug] [Thread-3 (]: SQL status: OK in 0.462 seconds
+[0m17:01:31.768042 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AAB1532E70>]}
+[0m17:01:31.768042 [info ] [Thread-3 (]: 1 of 2 OK created sql view model weather_data.stg_daily_weather ................ [[32mCREATE VIEW (0 processed)[0m in 4.86s]
+[0m17:01:31.768042 [debug] [Thread-3 (]: Finished running node model.weather_dbt.stg_daily_weather
+[0m17:01:31.768042 [debug] [Thread-3 (]: Began running node model.weather_dbt.mart_daily_weather
+[0m17:01:31.768042 [info ] [Thread-3 (]: 2 of 2 START sql view model weather_data.mart_daily_weather .................... [RUN]
+[0m17:01:31.783152 [debug] [Thread-3 (]: Re-using an available connection from the pool (formerly model.weather_dbt.stg_daily_weather, now model.weather_dbt.mart_daily_weather)
+[0m17:01:31.783659 [debug] [Thread-3 (]: Began compiling node model.weather_dbt.mart_daily_weather
+[0m17:01:31.785666 [debug] [Thread-3 (]: Writing injected SQL for node "model.weather_dbt.mart_daily_weather"
+[0m17:01:31.785666 [debug] [Thread-3 (]: Began executing node model.weather_dbt.mart_daily_weather
+[0m17:01:31.793065 [debug] [Thread-3 (]: Writing runtime sql for node "model.weather_dbt.mart_daily_weather"
+[0m17:01:31.795071 [debug] [Thread-3 (]: On model.weather_dbt.mart_daily_weather: /* {"app": "dbt", "dbt_version": "1.11.11", "profile_name": "weather_dbt", "target_name": "dev", "node_id": "model.weather_dbt.mart_daily_weather"} */
+
+
+  create or replace view `magnetic-port-429910-q4`.`weather_data`.`mart_daily_weather`
+  OPTIONS()
+  as select *
+from `magnetic-port-429910-q4`.`weather_data`.`stg_daily_weather`;
+
+
+[0m17:01:31.795071 [debug] [Thread-3 (]: Opening a new connection, currently in state closed
+[0m17:01:33.984979 [debug] [Thread-3 (]: BigQuery adapter: https://console.cloud.google.com/bigquery?project=magnetic-port-429910-q4&j=bq:asia-south1:1d49a354-aaef-414b-ac35-705474f947e1&page=queryresults
+[0m17:01:34.435594 [debug] [Thread-3 (]: SQL status: OK in 0.444 seconds
+[0m17:01:34.451417 [debug] [Thread-3 (]: Sending event: {'category': 'dbt', 'action': 'run_model', 'label': '81c4262d-3eb9-4cb9-88f3-f413b76cd7b5', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AAB1FEB2C0>]}
+[0m17:01:34.451417 [info ] [Thread-3 (]: 2 of 2 OK created sql view model weather_data.mart_daily_weather ............... [[32mCREATE VIEW (0 processed)[0m in 2.68s]
+[0m17:01:34.451417 [debug] [Thread-3 (]: Finished running node model.weather_dbt.mart_daily_weather
+[0m17:01:34.451417 [debug] [MainThread]: Opening a new connection, currently in state closed
+[0m17:01:34.508448 [debug] [MainThread]: Connection 'master' was properly closed.
+[0m17:01:34.509449 [debug] [MainThread]: Connection 'list_magnetic-port-429910-q4' was properly closed.
+[0m17:01:34.509449 [debug] [MainThread]: Connection 'list_magnetic-port-429910-q4_weather_data' was properly closed.
+[0m17:01:34.510448 [debug] [MainThread]: Connection 'model.weather_dbt.mart_daily_weather' was properly closed.
+[0m17:01:34.510448 [info ] [MainThread]: 
+[0m17:01:34.511470 [info ] [MainThread]: Finished running 2 view models in 0 hours 0 minutes and 11.38 seconds (11.38s).
+[0m17:01:34.512415 [debug] [MainThread]: Command end result
+[0m17:01:34.553378 [debug] [MainThread]: Wrote artifact WritableManifest to C:\Aadarsha\New folder\weather_etl\weather_dbt\target\manifest.json
+[0m17:01:34.558087 [debug] [MainThread]: Wrote artifact SemanticManifest to C:\Aadarsha\New folder\weather_etl\weather_dbt\target\semantic_manifest.json
+[0m17:01:34.565474 [debug] [MainThread]: Wrote artifact RunExecutionResult to C:\Aadarsha\New folder\weather_etl\weather_dbt\target\run_results.json
+[0m17:01:34.566483 [info ] [MainThread]: 
+[0m17:01:34.566483 [info ] [MainThread]: [32mCompleted successfully[0m
+[0m17:01:34.567481 [info ] [MainThread]: 
+[0m17:01:34.567481 [info ] [MainThread]: Done. PASS=2 WARN=0 ERROR=0 SKIP=0 NO-OP=0 TOTAL=2
+[0m17:01:34.569518 [debug] [MainThread]: Command `dbt run` succeeded at 17:01:34.569518 after 16.79 seconds
+[0m17:01:34.570147 [debug] [MainThread]: Sending event: {'category': 'dbt', 'action': 'invocation', 'label': 'end', 'context': [<snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA99E3E000>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9F147290>, <snowplow_tracker.self_describing_json.SelfDescribingJson object at 0x000001AA9F2302C0>]}
+[0m17:01:34.570147 [debug] [MainThread]: Flushing usage events
+[0m17:01:36.219419 [debug] [MainThread]: An error was encountered while trying to flush usage events

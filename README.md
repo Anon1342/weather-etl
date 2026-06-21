@@ -21,17 +21,22 @@ Open-Meteo API → extract.py → transform.py → load_bq.py → BigQuery → d
                             Orchestrated by Prefect
 ```
 
-## How To Run
+## How To Run(Docker)
+1.`git clone <repo-url>`
+2. install docker(https://docs.docker.com/get-docker/)
+3. Obtain credentials.json from GCP and place it in the project folder
+4. Copy .env.example to .env and fill in your values
+5. Copy profiles.yml.example to profiles.yml and fill in your values
+6. `docker build -t weather-etl .`
+7. `docker run -v "path\to\your\project\.env:/app/.env"  -v "path\to\your\project\profiles.yml:/app/profiles.yml" -v "path\to\your\project\credentials.json:/app/credentials.json" weather-etl`
 
-1. `git clone <repo-url>`
-2. `python -m venv env_1`
-3. `env_1\Scripts\activate`
-4. `pip install -r requirements.txt`
-5.  Create .env file and add GOOGLE_APPLICATION_CREDENTIALS=credentials.json
-6.  Place your credentials.json file in the project folder
-7. `python pipeline_prefect.py`
-10.`prefect deploy pipeline_prefect.py:prefect_pipeline` (for scheduling)
-11. `prefect server start` for seeing the Prefect Dashboard
+
+
+
+
+```
+
+
 
 ## Dashboard
 Built using Looker Studio connected to the dbt mart layer in BigQuery.

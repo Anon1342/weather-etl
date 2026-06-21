@@ -28,14 +28,7 @@ Open-Meteo API → extract.py → transform.py → load_bq.py → BigQuery → d
 4. Copy .env.example to .env and fill in your values
 5. Copy profiles.yml.example to profiles.yml and fill in your values
 6. `docker build -t weather-etl .`
-7. `docker run -v "path\to\your\project\.env:/app/.env"  -v "path\to\your\project\profiles.yml:/app/profiles.yml" -v "path\to\your\project\credentials.json:/app/credentials.json" weather-etl`
-
-
-
-
-
-```
-
+7. `docker-compose up`
 
 
 ## Dashboard

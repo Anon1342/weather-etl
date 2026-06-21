@@ -11,7 +11,7 @@ load_bq_task = task(load_bq_weather)
 @task
 def dbt_run_task():
     subprocess.run(["rm", "-rf", "weather_dbt/target", "weather_dbt/dbt_packages"], cwd="/app")
-    subprocess.run(["dbt","run","--profiles-dir","/app"],cwd = "weather_dbt")
+    subprocess.run(["dbt","run","--profiles-dir","/app"],cwd = "/app/weather_dbt")
 
 @flow
 def prefect_pipeline():

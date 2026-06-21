@@ -21,14 +21,13 @@ Open-Meteo API → extract.py → transform.py → load_bq.py → BigQuery → d
                             Orchestrated by Prefect
 ```
 
-## How To Run(Docker)
-1.`git clone <repo-url>`
+## How To Run (Docker)
+1.`git clone https://github.com/Anon1342/weather-etl.git`
 2. install docker(https://docs.docker.com/get-docker/)
 3. Obtain credentials.json from GCP and place it in the project folder
 4. Copy .env.example to .env and fill in your values
 5. Copy profiles.yml.example to profiles.yml and fill in your values
-6. `docker build -t weather-etl .`
-7. `docker-compose up`
+6. `docker-compose up`
 
 
 ## Dashboard

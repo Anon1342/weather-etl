@@ -6,20 +6,24 @@ Fetches daily weather data from the Open-Meteo API, transforms the JSON into a D
 
 - **Python** - For writing the script/code
 - **Open-Meteo API** - For extracting the daily weather data
-- **Pandas** - for transforming the json into a DataFrame
-- **BigQuery** - as the cloud data warehouse for storing and querying transformed data
-- **dbt** - to model the data
+- **Pandas** - For transforming the json into a DataFrame
+- **BigQuery** - As the cloud data warehouse for storing and querying transformed data
+- **dbt** - To model the data
 - **Looker Studio** - to visualize the data
-- **Prefect** - to orchestrate the workflows
-- **GitHub** - for version control and storing the code
+- **Prefect** - To orchestrate the workflows
+- **GitHub** - For version control and storing the code
+- **Docker** - Used for containerizing the project, enabling it to run anywhere without dependency issue
+- **GitHub Actions** - Used for CI/CD. The docker image automatically gets pushed to Docker Hub when the code is pushed to GitHub repo
 
 
 ## Architecture
 ```
-Open-Meteo API → extract.py → transform.py → load_bq.py → BigQuery → dbt → Looker Studio
-                                    ↑
-                            Orchestrated by Prefect
-```
+        Open-Meteo API → [Docker Container: extract.py → transform.py → load_bq.py → dbt] → BigQuery → Looker Studio
+                           ↑
+                    Orchestrated by Prefect
+
+Note: load_bq.py writes to BigQuery; dbt reads and writes back to BigQuery
+ ```
 
 ## How To Run (Docker)
 1.`git clone https://github.com/Anon1342/weather-etl.git`

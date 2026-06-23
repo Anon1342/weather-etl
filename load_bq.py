@@ -1,12 +1,12 @@
 from dotenv import load_dotenv 
-load_dotenv()
+import os
 from google.cloud import bigquery
 from extract import extract_weather
 from transform import transform_weather
-
+load_dotenv()
 def load_bq_weather(df):
     client = bigquery.Client()
-    table_id = "magnetic-port-429910-q4.weather_data.daily_weather"
+    table_id = os.getenv("TABLE_ID")
     job = client.load_table_from_dataframe(df,table_id)
     job.result()
     return("Job done succesfully")
